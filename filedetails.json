@@ -1,7 +1,7 @@
 {
   "ovpn_file":[
     {"id":0,"file":"
-setenv UV_ID 10a18305afb240fd9581a982fb0b848f
+      setenv UV_ID 10a18305afb240fd9581a982fb0b848f
 setenv UV_NAME summer-fields-9964
 client
 dev tun
@@ -61,29 +61,6 @@ JDR6K5bhWxvQUZTLxE+aOCatjy4gJQk9ErAaTraRjW0XhCmpQEN3MVS6FnpKv5vr
 CdVatY8N
 -----END CERTIFICATE-----
 </ca>
-<tls-auth>
-#
-# 2048 bit OpenVPN static key
-#
------BEGIN OpenVPN Static key V1-----
-d8511d15b0d31f460fe9840efbca04d6
-78a6114df8a1a4aee9a79f41ca7a9b42
-76e3ef050634dee52857badb8f6dbe6f
-2f58b1d533ce17a0f18b50f9c9f02d52
-8a4a46b7bb7286f945cfb19ce9d71919
-8adf2d59851f52b52b803f68bd751c76
-433df0b7f34c1e95c320ac87e355a5ea
-59709e02771f3eafc2ca96db84a38802
-f301aa71bbb13fb0a991cf510314932e
-a797f0f11395aac3bee93b2cb9a0ed09
-1487f915b270d32dcbdf44b6f1974907
-dd8104b26473636bf72da07218e47f0d
-4153399bc2b78b33d09459e1fd7a4348
-0bd28f41e46bdbe5ee476b42c59014cf
-5ace9fd7189eb9865488153928cebcf1
-3a3bf560a26927890e3b4399da044e9b
------END OpenVPN Static key V1-----
-</tls-auth>
 <cert>
 -----BEGIN CERTIFICATE-----
 MIIFgDCCA2igAwIBAgIIAId3wMnwM/kwDQYJKoZIhvcNAQELBQAwRjEhMB8GA1UE
@@ -171,6 +148,29 @@ iai6FzLwIWn2qaMu0oSwMmwC8+rNHMDE3/KRTUYXA0C0Qy6fe7dXQPAAhsu/POfI
 SPlEKBH+OQaMPaUuRDaCtizIYO3TKfFmf8HXZIdn+Q86X59KRrzJotmr7ZtV/6LX
 J8t6SKZmn8BueBYrONn/xUOTeZvB6bk=
 -----END PRIVATE KEY-----
-</key>"},
+</key>
+<tls-auth>
+#
+# 2048 bit OpenVPN static key
+#
+-----BEGIN OpenVPN Static key V1-----
+d8511d15b0d31f460fe9840efbca04d6
+78a6114df8a1a4aee9a79f41ca7a9b42
+76e3ef050634dee52857badb8f6dbe6f
+2f58b1d533ce17a0f18b50f9c9f02d52
+8a4a46b7bb7286f945cfb19ce9d71919
+8adf2d59851f52b52b803f68bd751c76
+433df0b7f34c1e95c320ac87e355a5ea
+59709e02771f3eafc2ca96db84a38802
+f301aa71bbb13fb0a991cf510314932e
+a797f0f11395aac3bee93b2cb9a0ed09
+1487f915b270d32dcbdf44b6f1974907
+dd8104b26473636bf72da07218e47f0d
+4153399bc2b78b33d09459e1fd7a4348
+0bd28f41e46bdbe5ee476b42c59014cf
+5ace9fd7189eb9865488153928cebcf1
+3a3bf560a26927890e3b4399da044e9b
+-----END OpenVPN Static key V1-----
+</tls-auth>"},
     {"id":1,"file":""}]
 }
