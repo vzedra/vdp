@@ -1,5 +1,75 @@
 {
   "ovpn_file":[
-    {"id":0,"file":""},
-    {"id":1,"file":""}]
+    {"id":0,"file":"
+	client
+	server-poll-timeout 4
+	nobind
+	remote 172.17.0.2 1194 udp
+	remote 172.17.0.2 1194 udp
+	remote 172.17.0.2 443 tcp
+	remote 172.17.0.2 1194 udp
+	remote 172.17.0.2 1194 udp
+	remote 172.17.0.2 1194 udp
+	remote 172.17.0.2 1194 udp
+	remote 172.17.0.2 1194 udp
+	dev tun
+	dev-type tun
+	remote-cert-tls server
+	tls-version-min 1.2
+	reneg-sec 604800
+	tun-mtu 1420
+	auth-user-pass
+	verb 3
+	push-peer-info
+
+	<ca>
+	-----BEGIN CERTIFICATE-----
+	MIIBeDCB/6ADAgECAgRnReS+MAoGCCqGSM49BAMCMBUxEzARBgNVBAMMCk9wZW5W
+	UE4gQ0EwHhcNMjQxMTI1MTUwOTUwWhcNMzQxMTI0MTUwOTUwWjAVMRMwEQYDVQQD
+	DApPcGVuVlBOIENBMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEbiKq0uTMbWM6O/Rb
+	QW2EtWio8k2doE1v28rLGjbwYr0Mnt7n3tIYJk9Sfu6O/j4F3LDHShGmZyYlEbeC
+	+yiAWSlNuUG8alNUf1Iy1QW78WRNTYWEVQHD6wwXeF+I70X4oyAwHjAPBgNVHRMB
+	Af8EBTADAQH/MAsGA1UdDwQEAwIBBjAKBggqhkjOPQQDAgNoADBlAjAw2x7bbYms
+	i8hj0kDDMhDlBQilhdVLA/IstCH72AmS80QFFHzkcDUhd5BC/vlw02UCMQCrLfuP
+	tCCQ9TGYMqPFyJtOwie0FDCkU27uGR+6d7OE/aeGP/NGQvIzRes43SRpC7Y=
+	-----END CERTIFICATE-----
+	</ca>
+	<cert>
+	-----BEGIN CERTIFICATE-----
+	MIIBnjCCASWgAwIBAgIIK81OTifLW/wwCgYIKoZIzj0EAwIwFTETMBEGA1UEAwwK
+	T3BlblZQTiBDQTAeFw0yNDExMjUxNzM5NDBaFw0zNDExMjQxNzM5NDBaMBIxEDAO
+	BgNVBAMMB29wZW52cG4wdjAQBgcqhkjOPQIBBgUrgQQAIgNiAASU3gFSf3/CR47E
+	MijMfR+eGG6xoghXIXJ/2xxJ+I9YLbuVO0sqDFZR78Hk4dXxcz0CC75vw1EMw53F
+	efBDOFRGcyohIzgQsmCFQoZxQMTb26iXvgn8d8dFlfob/U9+Uu+jRTBDMAwGA1Ud
+	EwEB/wQCMAAwCwYDVR0PBAQDAgeAMBMGA1UdJQQMMAoGCCsGAQUFBwMCMBEGCWCG
+	SAGG+EIBAQQEAwIHgDAKBggqhkjOPQQDAgNnADBkAjAjZ1BHaVl7KPkcxkT9ixZj
+	nV0geUd0MatU0uhiQLOCqRktBQyPyoIKU2lXqxYOWX8CMCjN93xuEfekSrQPwl9O
+	Ofs27o3hQ+t0qYTjrehgJ3n6W1tVsn4/ehtZEn283J6kvA==
+	-----END CERTIFICATE-----
+	</cert>
+	<key>
+	-----BEGIN PRIVATE KEY-----
+	MIG2AgEAMBAGByqGSM49AgEGBSuBBAAiBIGeMIGbAgEBBDAM1BSpFOTSdLIpXjPf
+	I9O3raj3ZVZzIEA2NJ1hnIx9j7kTgVKkGrciLGtpCRRwPVahZANiAASU3gFSf3/C
+	R47EMijMfR+eGG6xoghXIXJ/2xxJ+I9YLbuVO0sqDFZR78Hk4dXxcz0CC75vw1EM
+	w53FefBDOFRGcyohIzgQsmCFQoZxQMTb26iXvgn8d8dFlfob/U9+Uu8=
+	-----END PRIVATE KEY-----
+	</key>
+	<tls-crypt-v2>
+	-----BEGIN OpenVPN tls-crypt-v2 client key-----
+	ackWIOammESn7pblnssmqHu0y0BnkioAvoZie/Bdwei6lMuNkY8mNzFz1FLE3wDV
+	IN1nyfRwzDkXfheR9JypTiGG32oeoqzAkIDchZAsCgIkXP/Mh5YbqIgsHLzLv6v4
+	vpYirD+2XWRRzpPGU20rUnUaAT+aGX1ITTO7foJ99FO4FdPGGDXGYBKoh8C4i7wB
+	AXRX2yhwrsj1Fwai4DM8z+1uoG8oI34XjwiYyPKTDmVme2WBsuCOUrM1AUkuc8fU
+	PCuNOo8eN6ie0g8/b6GjHcb6OC+ENMWFpkXWVdY1/QvsFjo6CXpMHUE/wWS7asEJ
+	Vo3Qlfce2nFhii3eamUxTW5QGSwxVDVoXaCxRiZ2RGdg3ywCh6VXObPzlOXGawnm
+	K8CFPmRBVi8mDFzGGD0CHfasVAEzbXCkEJipvWqqDH0vMQSSoVpCpQCjoJ9XKbar
+	uSeGt5c8d+UE4oHiG2JS9Pqq8/enzY0xO14duX/PXcC7/jKiOQvW0NPcrdT/kJxA
+	9Q1BX5isVfyEx0K1kmWYV2S0shGOmJYCq1rxRl+1X+7baH9GdZlNUllcqljWL+Qn
+	wad4j4kIjJQCBdHBcr0q1w8eJpiGKNvgNsVsWpTg9Q0LjSOsfo8B3Oqk6xAcpAfI
+	oqP1cEeK/tAWMN3KWHIS23YXBGgoW3q5ccCdECZEvKjfMaxpYYqiWyGvKr01nguX
+	+Bwf63m7vlZhVfbjRdiINXOF5zQ/Vkikx28OKtwbWz/s7JjifcVylxFw8Ij6pYtN
+	dGZOeJn5OF1/9pmIPIOs6F0Ys42UhesBWQ==
+	-----END OpenVPN tls-crypt-v2 client key-----
+	</tls-crypt-v2>"}]
 }
